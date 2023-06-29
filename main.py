@@ -21,13 +21,13 @@ small_marks = ""
 def reset():
     global timer, reps, big_marks, small_marks
     window.after_cancel(timer)
-    reps = 0
-    big_marks = ""
-    small_marks = ""
-
     canvas.itemconfig(timer_text, text="00:00")
     lbl_checkmark.config(text="")
     lbl_title.config(text="Let's Start", fg=GREEN)
+
+    reps = 0
+    big_marks = ""
+    small_marks = ""
 
 
 # ---------------------------- TIMER MECHANISM ------------------------------- #
